@@ -3,11 +3,11 @@
  * @description Creates the ThreeJS scene
  */
 
-import * as THREE from "js/three.module.js";
-import { OrbitControls } from "js/OrbitControls.js";
-import { TransformControls } from "js/TransformControls.js";
-import { canvasContainer } from "js/Viewer.js";
-import { CSS2DRenderer } from "js/jsm/CSS2DRenderer.js";
+import * as THREE from "./three.module.js";
+import { OrbitControls } from "./OrbitControls.js";
+import { TransformControls } from "./TransformControls.js";
+import { canvasContainer } from "./Viewer.js";
+import { CSS2DRenderer } from "./jsm/CSS2DRenderer.js";
 
 //#region  Init - animate - update
 let particle;

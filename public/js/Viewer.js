@@ -1,5 +1,5 @@
-import * as THREE from "js/three.module.js";
-import * as Init from "js/./init.js";
+import * as THREE from "./three.module.js";
+import * as Init from "./init.js";
 
 export const canvasContainer = document.querySelector("#container-3d");
 
