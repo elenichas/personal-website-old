@@ -1,4 +1,4 @@
-import { Matrix4, Object3D, Vector3 } from "/public/js/three.module.js";
+import { Matrix4, Object3D, Vector3 } from "../three.module.js";
 
 var CSS2DObject = function (element) {
   Object3D.call(this);
