@@ -1,6 +1,6 @@
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0;
 }
 
@@ -8,33 +8,63 @@ body {
   padding: 80px;
   text-align: center;
   background: #b08bb8;
-  color: white;
+  color: #420066;
 }
 
 .header h1 {
   font-size: 40px;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  background: #380057;
+  /* background: #8200c9; /* Old browsers */
+  /* background: -moz-linear-gradient(
+    top,
+    #3b005a 0%,
+    #8200c9 50%,
+    #408dc0 100%
+  ); FF3.6-15 */
+
+  /* background: -webkit-linear-gradient(
+    top,
+    #3b005a 0%,
+    #8200c9 50%,
+    #408dc0 100%
+  ); Chrome10-25,Safari5.1-6 */
+
+  /* background: linear-gradient(
+    to bottom,
+    #3b005a 0%,
+    #8200c9 50%,
+    #408dc0 100%
+  ); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+  */
+
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e8bb', endColorstr='#8200c9',GradientType=0 ); IE6-9 */
+}
+
 .navbar {
   overflow: hidden;
-  /* background-color: #333; */
-  background: #e3c6e9;
-  padding: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar a {
+/* .navbar a {
   float: right;
   display: block;
-  color: white;
+  color: #420066;
   text-align: center;
   padding: 14px 20px;
+  font-size: 18px;
   text-decoration: none;
   border-radius: 12px;
-}
+} */
 
 .main {
-  height: 70vh;
-  background: #e3c6e9;
+  /* height: 70vh; */
+  /* background: #e3c6e9; */
 }
 
 .half {
@@ -45,14 +75,101 @@ h6 {
   align-self: center;
 }
 .navbar a.right {
-  float: right;
+  float: center;
 }
 
-.navbar a:hover {
-  background-color: #752485;
-  color: rgb(255, 255, 255);
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 50px;
 }
 
+.bar {
+  width: 4px;
+  height: 100px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.greeting {
+  color: rgba(255, 255, 255, 0.747);
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: #ffffff9e;
+  text-shadow: 0 0 7px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 50px;
+}
+
+#container-3d {
+  pointer-events: none;
+}
+
+.portrait {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  box-shadow: 6px 1px 60px 2px rgb(0 0 0 / 45%);
+}
+
+.greeting:hover {
+  color: rgba(255, 255, 255, 0.747);
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: #ffffff;
+  text-shadow: 0 0 7px;
+  cursor: pointer;
+}
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.arrow:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
@@ -65,5 +182,9 @@ h6 {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #e3c6e9;
+  /* background: #e3c6e9; */
+}
+
+a {
+  color: white;
 }

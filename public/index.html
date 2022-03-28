@@ -7,23 +7,51 @@
     <title>Document</title>
   </head>
   <link rel="stylesheet" href="./style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <body>
-    <div class="header">
+    <!-- <div class="header">
       <h1>My Website</h1>
       <p>A website created by me.</p>
+    </div> -->
+    <div class="navbar">
+      <a class="btn btn-5" href="#">Home</a>
+      <a class="btn btn-5" href="#">Projects</a>
+      <a class="btn btn-5" href="#">About</a>
+    </div>
+    <div class="bars-container">
+      <div class="btn btn-5 bar" style="right: 90%"></div>
+      <div class="btn btn-5 bar" style="left: 90%"></div>
+      <div class="greeting">
+        Hi, I'm Eleni,<br />
+        a Computational Designer based in London!
+      </div>
+      <img
+        class="portrait"
+        src="./images/portrait.jpg"
+        alt="image of author"
+        width="300px"
+        height="350px"
+      />
     </div>
 
-    <div class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">About me</a>
-    </div>
     <div class="main">
-      <div class="half"></div>
-      <div class="half"></div>
+      <section id="container-3d"></section>
     </div>
     <div class="footer">
-      <h2>Footer</h2>
+      <h2>
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </h2>
     </div>
+    <script type="module" src="js\Viewer.js"></script>
+    <script type="module" src="js\OrbitControls.js"></script>
+    <script type="module" src="js\three.module.js"></script>
+    <script type="module" src="js\TransformControls.js"></script>
   </body>
 </html>
